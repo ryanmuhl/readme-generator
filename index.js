@@ -1,6 +1,12 @@
+// Allows interaction with the inquirer module
 const inquirer = require("inquirer");
+
+//Import the `fs` module to enable interaction with the file system
 const fs = require("fs");
+
 const generateMarkdown = require("./utils/generateMarkdown.js");
+
+//File Name/type to be generated after promts are answered
 const fileName = "README.md";
 
 
