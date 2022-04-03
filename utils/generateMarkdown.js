@@ -1,8 +1,10 @@
-// badge function
+// badge function to append badge to README.MD file
 function badge(license){
   return `![Badge](https://img.shields.io/badge/License-${license}-blueviolet)`
 }
-// function to generate markdown for README
+// function to append data to README
+//Hard coded information appended
+//Prompt questions input in terminal appended to file via generateMarkdown.js
 function generateMarkdown(data) {
   return `# ${data.title}
   # Description

@@ -4,7 +4,7 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const fileName = "README.md";
 
 
-// Questions Array
+// Questions Array for future Promts
 const questions = [
     {
         type: "input",
@@ -67,13 +67,14 @@ function writeToFile(fileName, data) {
     const readme = generateMarkdown(data);
     
     // Write Markdown file
+    // If successful, Success! will display in console
     fs.writeFile(fileName, readme, function (err) {
         if (err) throw err;
         console.log("Success!");
     });
 }
 
-// function to initialize program
+// function to initialize application
 function init() {
    
     // inquirer module
@@ -82,5 +83,5 @@ function init() {
      })
 }
 
-// function call to initialize program
+// function call to initialize
 init();
