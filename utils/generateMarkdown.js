@@ -2,6 +2,7 @@
 function badge(license){
   return `![Badge](https://img.shields.io/badge/License-${license}-blueviolet)`
 }
+
 // function to append data to README
 //Hard coded information appended
 //Prompt questions input in terminal appended to file via generateMarkdown.js
@@ -36,5 +37,5 @@ function generateMarkdown(data) {
 `;
 }
 
-// Export Markdown File
+// Export Markdown File (allows functinality with index.js file)
 module.exports = generateMarkdown;
